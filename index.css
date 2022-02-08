@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+
+#logDev{
+    height: fit-content;
+    width: 25%;
+}
+
+
+
+#logo{
+    color: #e6178b;
+    padding: 0 0 0 3vw; 
+    font-size: 25px; 
+    font-style: italic; 
+    display: inline;
+    height: 100%;
+    font-weight: bold;
+}
+
+
+ul li{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0.5vw 4vw 0 3vw;
+}
+
+form{
+    width: fit-content;
+    margin: 0 5vw 0 0;
+    
+}
+
+
+label{
+    text-align: right;
+    font-weight: bold;
+    color: #e6178b;
+    font-size: 12px;
+}
+
+
+input{
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+    font-size: 8px;
+}
+
+#forgotPassword{
+    padding: 0;
+    margin: 0 0 0 1vw;
+    font-weight: bold;
+    display: inline;
+    color: white;
+    font-size: 8px;
+}
+
+
+.video{
+    height: 100%;
+    width: 100%;
+}
+
+#videoDiv{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.video video {
+    position: fixed;
+   top: 0;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.videoParagraph{
+    position: fixed;
+    padding: 0;
+    font-size: 26px;
+    bottom: 0;
+    margin-left: 40%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+#startNow{
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 1em;
+    background-color: #e6178b;
+}
