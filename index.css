@@ -82,7 +82,7 @@ input{
 
 .video video {
     position: fixed;
-   top: 0;
+    top: 0;
     margin: 0;
     padding: 0;
     object-fit: cover;
@@ -104,4 +104,79 @@ input{
     padding: 0;
     margin-bottom: 1em;
     background-color: #e6178b;
+}
+
+
+.hamburguer{
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+  }
+
+  @media (max-width: 900px){
+
+    #logo{
+        color: #e6178b;
+        padding: 0 0 0 3vw; 
+        font-size: 18px; 
+        font-style: italic; 
+        display: inline;
+        height: 100%;
+        font-weight: bold;
+    }
+
+    ul{ 
+        visibility: hidden;
+        top: 100%;
+        left: 17%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul li{
+        font-size: 10px;
+    }
+
+
+   #videoDiv{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+   }
+   
+   .videoParagraph{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1;
+    color: white;
+    margin: 0 0 20% 0
+}
+
+
+.hamburguer{
+    visibility: visible;
+    position: absolute;
+    right: 42.5%;
+    top: 40%;
+    background: white
+}
+
+.lineMenuDiv{
+    padding-right: 15px;
+
+}
+
+.lineMenu{
+    border: 2px solid #081f40;
+    background-color: white;
+    padding: 2px;
+    width: 38px;
+}
+
+
 }
