@@ -11,30 +11,29 @@
 </head>
 <body>
     <header>
-        <nav class="navbar" id="navBar" style="background-color: #081f40;">
+        <nav id="navBar">
             <div id="logoDev">
                 <a class="navbar-brand" id="logo">&lt/DEVLAND&gt</a>
-            </div>
-            <div>
-                <ul>
-                    <li>Início</li>
-                    <li>Cadastro</li>
-                    <li>Sobre</li>
-                </ul>
             </div>
             <div class="lineMenuDiv">
                 <div class="lineMenu"></div>
                 <div class="lineMenu"></div>
                 <div class="lineMenu"></div>
-
+            </div>
+            <div class="navMenuDiv">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Sobre</a></ul></li>
+                </ul>
             </div>
             <form>
+                <div class="formLogin">
                     <label>Login: </label>
                     <input type="email">
-                    <br>
                     <label> Senha: </label>
                     <input type="password">
-                    <br>
+                </div>
                     <p id="forgotPassword">Esqueceu sua senha?</p>
                 </form>
             </div>
@@ -52,5 +51,7 @@
             <p id="startNow">Comece agora</p>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
