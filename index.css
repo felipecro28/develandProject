@@ -3,71 +3,98 @@
     padding: 0;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
 
 header{
     z-index: 1;
     position: fixed;
     width: 100%;
 }
-
-
-#logDev{
-    height: fit-content;
-    width: 25%;
+#navBar{
+    width: 100%;
+    background-color: #0d2952;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
 }
 
-
+.navbar-brand{
+    font-style: italic;
+    font-size: 2.0rem;
+    margin: 1.1rem; 
+}
 
 #logo{
-    color: #e6178b;
-    padding: 0 0 0 3vw; 
-    font-size: 25px; 
-    font-style: italic; 
-    display: inline;
-    height: 100%;
-    font-weight: bold;
+   color: #e6178b;
+   font-weight: bold;
 }
 
+.navMenuDiv ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+}
 
-ul li{
+.navMenuDiv li{
+    font-size: 1.0rem;
+    list-style: none;
+    margin: 0 2rem 0 3rem;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
-    display: inline-block;
-    padding: 0.5vw 4vw 0 3vw;
+
 }
 
-form{
-    width: fit-content;
-    margin: 0 5vw 0 0;
+.navMenuDiv a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.lineMenuDiv {
+    
+    display: none;
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+}
+
+.lineMenu{
+    width: 2.0rem;
+    height: 9px;
+    background-color: white;
+    border-bottom: 6px solid #081f40;
     
 }
 
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
 
-label{
-    text-align: right;
-    font-weight: bold;
-    color: #e6178b;
+.formLogin input{
+    width: 9.5rem;
+    height: 18px;
     font-size: 12px;
 }
 
-
-input{
-    display: inline-block;
-    width: 60px;
-    height: 14px;
-    font-size: 8px;
-}
-
 #forgotPassword{
-    padding: 0;
-    margin: 0 0 0 1vw;
-    font-weight: bold;
-    display: inline;
-    color: white;
-    font-size: 8px;
+    line-height: 2rem;
+    margin: 0 70px 0 0
 }
-
 
 .video{
     height: 100%;
@@ -106,77 +133,71 @@ input{
     background-color: #e6178b;
 }
 
-
-.hamburguer{
-    visibility: hidden;
-    position: absolute;
-    top:0;
-    width: 30px;
-    height: 2px;
-    background-color: white;
-  }
-
-  @media (max-width: 900px){
+@media (max-width: 900px) {
+    #navBar{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     #logo{
-        color: #e6178b;
-        padding: 0 0 0 3vw; 
-        font-size: 18px; 
-        font-style: italic; 
-        display: inline;
-        height: 100%;
-        font-weight: bold;
+        font-size: 28px;
     }
 
-    ul{ 
-        visibility: hidden;
-        top: 100%;
-        left: 17%;
-        position: absolute;
+    .navMenuDiv{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navMenuDiv ul{
+        display: none;
+        text-align: center;
+        flex-direction: column;
+        margin: 20px 5px 0 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navMenuDiv li{
+        width: 100%;
+        margin: 0 0 8% 0;
+        padding: 0 35px 0 15px;
+    }
+
+    .navMenuDiv a{
+        font-size: 14px;
+        margin: auto;
+    }
+
+    .formLogin{
+        display: none;
+    }
+
+    #forgotPassword{
+        display: none;
+    }
+
+    
+    .lineMenuDiv{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
-
-    ul li{
-        font-size: 10px;
+    
+    #videoDiv{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
-
-
-   #videoDiv{
-       height: 100%;
-       width: 100%;
-       object-fit: cover;
-   }
-   
-   .videoParagraph{
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    z-index: 1;
-    color: white;
-    margin: 0 0 20% 0
-}
-
-
-.hamburguer{
-    visibility: visible;
-    position: absolute;
-    right: 42.5%;
-    top: 40%;
-    background: white
-}
-
-.lineMenuDiv{
-    padding-right: 15px;
-
-}
-
-.lineMenu{
-    border: 2px solid #081f40;
-    background-color: white;
-    padding: 2px;
-    width: 38px;
-}
-
-
+    
+    .videoParagraph{
+     width: 100%;
+     text-align: center;
+     font-size: 24px;
+     z-index: 1;
+     color: white;
+     margin: 0 0 20% 0
+ }
+    
 }
