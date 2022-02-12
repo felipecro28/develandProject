@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/cadastro.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ----------------- PARTE DE DADOS PESSOAIS -------------- -->
+    <div class="container">
+
+        <div id="box">
+            
+            <form action="">
+                <fieldset>
+                    <legend><strong>Cadastro</strong></legend>
+
+                    <img src="./img/caricatura.png" class="caricatura">
+    
+                    <div class="inputBox">
+                        <label for="nome"></label>
+                        <br>
+                        <input type="text" name="'nome" id="nome" class="inputUser" placeholder="Nome completo" required>
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="email"></label>
+                        <br>
+                        <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="rg"></label>
+                        <br>
+                        <input type="number" name="'rg" id="rg" class="inputUser" placeholder="Documento RG" required>
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="pass"></label>
+                        <br>
+                        <input type="password" id="senha" name="senha" class="inputUser"
+                               minlength="7" placeholder="Senha" required>
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="pass"></label>
+                        <br>
+                        <input type="password" id="confirmaSenha" name="senha" class="inputUser"
+                               minlength="7" placeholder="Confirmação de senha" required>
+                    </div>
+                    <br>
+                    
+    <!-- ---------------PARTE DO ENDEREÇO------------------------ -->
+                        <div class="inputBoxEndereco">
+                            <label for="cep">Digite seu CEP</label>
+                            <br>
+                            <input type="text" id="cep" class="inputUser" placeholder="00000000" required>
+                        </div>
+                        <br>
+                        <div class="inputBoxEndereco">
+                            <input type="text" id="numero" class="inputUser" placeholder="Numero"  required>
+                            <label for="numero"></label>
+                        </div>
+                        
+                        <div class="inputBoxEndereco">
+                            <input type="text" id="endereco" class="inputUser" placeholder="Rua"  required>
+                            <label for="endereco"></label>
+                        </div>
+                        
+                        <div class="inputBoxEndereco">
+                            <input type="text" id="bairro" class="inputUser" placeholder="Bairro" required>
+                            <label for="bairro"></label>
+                        </div>
+    
+                        <div class="inputBoxEndereco">
+                            <input type="text" id="cidade" class="inputUser" placeholder="Cidade" required>
+                            <label for="cidade"></label>
+                        </div>
+    
+                        <div class="inputBoxEndereco">
+                            <input type="text" id="estado" class="inputUser" placeholder="Estado"  required>
+                            <label for="estado"></label>
+                        </div>
+    
+                        <div class="inputBoxEndereco">
+                            <input type="text" id="complemento" class="inputUser" placeholder="Complemento" >
+                            <label for="complemento"></label>
+                        </div>
+                        <br>
+        <!-- ---------- PARTE DE ENVIAR -- PODERA SER ALTERADO PARA BUTTON--------- -->
+                        <div>
+                            <button><strong>Confirmar</strong></button>
+                        </div>
+    
+                    </div>
+    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="../javascript/apiCep.js"></script>
+</body>
+</html>
