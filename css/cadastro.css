@@ -1,0 +1,90 @@
+html {
+    height: 1200px;
+}
+
+/* 
+-linkar barra de nvageção
+-colocar hover 
+-linkar footer 
+-validar formulario 
+*/
+
+
+/* ----------------container onde esta formulario----------------------- */
+.container {
+    background: rgb(179, 179, 179);
+    max-width: 900px;
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+
+/* ----------------------INICIO FORMULARIO --------------- */
+.caricatura{
+    width: 50%;
+    margin-left: 70px;
+}
+fieldset {
+    
+    padding: 30px;
+    border: solid 5px #e6178b;
+    background: rgba(255, 255, 255, 0);
+}
+
+.inputUser{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: solid 2.5px;
+}
+
+.inputBoxEndereco{
+    padding-top: 10px;
+}
+
+legend{
+    background:#e6178b;
+    border-radius: 5px;
+    padding: 7px 30px;
+    text-align: center;
+}
+
+#box{
+    padding: 20px;
+    background: white;
+    width: 360px;
+    height: 780px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+input{
+    height: 20px;
+}
+
+#numero{
+    width: 65px;
+}
+
+#cep {
+    width: 65px;
+}
+ 
+/*------------------ BOTAO DE ENVIAR FORMULARIO ------------------ */
+
+button {
+    width: 110px;
+    height: 31px;
+    margin-left: 30%;
+    background-color: #e6178b;
+    border: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+        color: black;
+}
+/* ----------------- FIM FORMULARIO ---------------------*/
+
+
+
