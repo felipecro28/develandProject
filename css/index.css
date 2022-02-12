@@ -339,7 +339,7 @@ hr {
     }
 
     .navMenuDiv ul{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         text-align: center;
