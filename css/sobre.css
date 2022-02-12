@@ -92,3 +92,7 @@ hr {
     background-color: lightgreen;
     height: 2px;
 }
+
+#barrinhaHide{
+    display: none;
+}

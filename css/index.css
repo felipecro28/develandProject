@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body{
     width: 100%;
-    margin: 0;
+    margin: 0;                                           
     padding: 0;
     color: white;
     height: 100%;
@@ -108,6 +109,14 @@ header{
     margin: 0 70px 0 0
 }
 
+
+
+
+
+
+
+
+
 main{
     width: 100%;
     height: 100vh;
@@ -134,7 +143,7 @@ main{
     padding: 0;
     font-size: 26px;
     bottom: 0;
-    margin-left: 40%;
+    margin-left: 37%;
     z-index: 1;
     color: white;
     text-align: center;
@@ -147,6 +156,129 @@ main{
     margin-bottom: 1em;
     background-color: #e6178b;
 }
+
+
+
+
+
+
+
+
+.about{
+    width: 100%;
+    background-image: url(../img/background\ card.jpg); 
+    background-size: cover;
+    color: black;
+}
+
+
+.sobreContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    width: 100%;
+    margin:auto;
+}
+
+.logoTorneSe {
+    display: flex;
+    justify-content: space-around;
+    border: rgb(177, 83, 99) solid 2px;
+    margin: 45px auto;
+    width: 50%;
+}
+
+.torneSe h2 {
+    font-size: 25px;
+    margin: auto;
+    color: rgb(130, 43, 112);
+}
+
+.torneSe {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.torneSe p {
+    font-weight: bolder;
+    color: rgb(130, 43, 112);
+}
+
+.torneSeMiniDiv {
+    margin: 10px;
+}
+
+.caracteristicasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicasTexto {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    height: fit-content;
+}
+
+.caracteristicasImagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoDev h1 {
+    color: #E6178B;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.caracteristicasTexto h3 {
+    color: #E6178B;
+    font-size: 20px;
+}
+
+.caracteristicasTexto p {
+    font-weight: bolder;
+}
+
+.caracteristicasMiniDiv {
+    margin: 20px;
+}
+
+.disponivelNasPlataformas {
+    width: 150px;
+}
+
+hr {
+    border: none;
+    background-color: black;
+    height: 2px;
+}
+
+.conhecaNossosPlanos{
+    margin: 0 0% 30% -15%;
+    width: 100vh;
+}
+
+#conhecaNossosPlanos{
+    font-size: 30px;
+    color: rgb(142, 64, 77);
+    font-weight: bolder;
+}
+
+#barrinhaHide{
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 .cardPromocional{
     width: 100%;
@@ -235,6 +367,7 @@ main{
 
     .listaLogin{
         margin-left: 25%;
+        display: inline-block;
     }
 
     .formLogin{
@@ -264,5 +397,38 @@ main{
      color: white;
      margin: 0 0 20% 0
  }
+
+    .logoTorneSe{
+        width: 100%;
+        border: none;
+    }
+    .caracteristicasMiniDiv{
+     width: fit-content;
+     display: block;
+ }
+
+ .caracteristicasTexto{
+     width: fit-content;
+ }
+
+    .caracteristicasImagens{
+        display: none;
+}
+
+    .conhecaNossosPlanos{
+     width: fit-content;
+     font-size: 15px;
+     margin: 0;
+  }
+
+  
+#barrinhaHide{
+    display:flex;
+}
+
+#barrinhaHide:last-child{
+    margin: 0
+
+}
     
 }
