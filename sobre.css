@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #081F40;
+}
+
+/* Sobre */
+
+.sobreContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logoTorneSe {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.torneSe h2 {
+    font-size: 25px;
+}
+
+.torneSe {
+    width: 400px;
+    text-align: center;
+}
+
+.torneSe p {
+    font-weight: bolder;
+}
+
+.torneSeMiniDiv {
+    margin: 10px;
+}
+
+.caracteristicasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicasTexto {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+
+.caracteristicasImagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoDev h1 {
+    color: #E6178B;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.caracteristicasTexto h3 {
+    color: #E6178B;
+    font-size: 20px;
+}
+
+.caracteristicasTexto p {
+    font-weight: bolder;
+}
+
+.caracteristicasMiniDiv {
+    margin: 20px;
+}
+
+.disponivelNasPlataformas {
+    width: 150px;
+}
+
+hr {
+    border: none;
+    background-color: lightgreen;
+    height: 2px;
+}
