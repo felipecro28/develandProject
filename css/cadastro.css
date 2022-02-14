@@ -12,12 +12,10 @@ html {
 
 
 /* ----------------container onde esta formulario----------------------- */
-.container {
+.containerForm {
 
     background: rgb(179, 179, 179);
-    max-width: 100%;
-    max-height: 1000px;
-
+    width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -127,7 +125,18 @@ button {
 }
 /* -------------- FORMULARIO EM COLUNA PARA RESPONSIVIDADE-----------------*/
 
-
+@media (max-width: 728px){
+    .containerForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #boxCadastro {
+        margin-bottom: 15px;
+    }
+    
+}
 
 
 
