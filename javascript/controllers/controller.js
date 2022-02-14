@@ -1,7 +1,7 @@
 class Usuario{
     constructor(){
-    this.arr = [];
-    this.view = new ValidaLogin();
+    this.arr = []
+    
     }
     
     guardarUsuario(){
@@ -9,12 +9,29 @@ class Usuario{
         const senha = $('#confirmaSenha').val();
         const users = new TratamentoUsuario(login, senha);
         this.arr.push(users);
+
+        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+    
+        listaUser.push(
+        {
+          userCad: login,
+          senhaCad: senha
+        }
+        )
+        
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+
+
+        $('#divBotao').append(`<p id="cadastroSucesso"> Usuário cadastrado com sucesso! </p>`)
+        setTimeout(()=>{
+            window.location.href = '../index.html'
+        }, 2000)
+        
     }
 
     logar(){
         const log = new ValidaLogin()
-        log.validar(this.arr)
-        console.log(this.arr)
+        log.validar(localStorage)
     }
 }
 
