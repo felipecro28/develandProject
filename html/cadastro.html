@@ -13,7 +13,7 @@
     <!-- ----------------- PARTE DE DADOS PESSOAIS -------------- -->
     <div class="container">
 
-        <div id="box">
+        <div id="boxCadastro">
             
             <form action="">
                 <fieldset>
@@ -56,11 +56,11 @@
                     
     <!-- ---------------PARTE DO ENDEREÇO------------------------ -->
                         <div class="inputBoxEndereco">
-                            <label for="cep">Digite seu CEP</label>
-                            <br>
-                            <input type="text" id="cep" class="inputUser" placeholder="00000000" required>
+                            <label for="cep"></label>
+                            
+                            <input type="text" id="cep" class="inputUser" placeholder="CEP" required>
                         </div>
-                        <br>
+                        
                         <div class="inputBoxEndereco">
                             <input type="text" id="numero" class="inputUser" placeholder="Numero"  required>
                             <label for="numero"></label>
@@ -93,14 +93,49 @@
                         <br>
         <!-- ---------- PARTE DE ENVIAR -- PODERA SER ALTERADO PARA BUTTON--------- -->
                         <div>
+
                             <button type="submit" id="botaoForm"><strong>Confirmar</strong></button>
+
                         </div>
     
                     </div>
     
                 </fieldset>
             </form>
+            <div class="boxRecuperaSenha">
+                <div class="divRecuperaSenha">
+                    <img src="../img/caricatura2.png" class="caricatura" id="avatarCoruja">
+                    <h2>Esqueceu a senha ?</h2>
+                    <form>
+                        <div>
+                            <label></label>
+                            <input type="email" class="inputUser" id="emailRecuperaSenha" placeholder="Digite seu e-mail" >
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="rg"></label>
+                            <input type="number" class="inputUser" id="rgRecuperaSenha" placeholder="Digite seu documento">
+                        </div>
+
+                        <p class="textRecuperaSenha">
+                            Enviaremos um e-mail com link para a recuperação de senha.
+                        </p>
+
+                        <div>
+                            <button type="submit" class="enviarRecuperacao">
+                                <strong>Enviar</strong>
+                            </button>
+                        </div>
+
+                    </form>
+
+                    
+
+                </div>
+            </div>
         </div>
+        
     </div>
 
     <script src="../javascript/apiCep.js"></script>

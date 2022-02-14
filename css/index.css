@@ -489,3 +489,117 @@ hr {
 }
     
 }
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #e6178b;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec{
+    margin-right:  30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container .sec.aboutus h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50;
+}
+.sci li{
+    list-style: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li:hover{
+    background: white;
+    transition: 1.2s;
+}
+.links{
+    position: relative;
+    width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color:black;
+    transition: 0.8s;
+}
+.contact{
+    width: cacl(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li spain:nth-child(1){
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li a{
+    color:white;
+}
+.contact .info li a:hover{
+    color: black;
+    transition: 0.7s;
+}
+.textoFinal{
+    width: 100%;
+    background: #081f40;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+}
+@media (max-width:900px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus,.links,.contact{
+        widht: 100%;
+    }
+    .textoFinal{
+        padding: 8px 40px;
+        text-align: center;
+    }
+}
