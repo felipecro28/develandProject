@@ -30,7 +30,7 @@
                     <div class="inputBox">
                         <label for="email"></label>
                         <br>
-                        <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                        <input type="email" name="email" id="emailForm" class="inputUser" placeholder="Email" required>
                     </div>
     
                     <div class="inputBox">
@@ -42,8 +42,8 @@
                     <div class="inputBox">
                         <label for="pass"></label>
                         <br>
-                        <input type="password" id="senha" name="senha" class="inputUser"
-                               minlength="7" placeholder="Senha" required>
+                        <input type="password" id="senhaForm" name="senha" class="inputUser"
+                               minlength="6" placeholder="Senha" required>
                     </div>
     
                     <div class="inputBox">
@@ -93,7 +93,7 @@
                         <br>
         <!-- ---------- PARTE DE ENVIAR -- PODERA SER ALTERADO PARA BUTTON--------- -->
                         <div>
-                            <button><strong>Confirmar</strong></button>
+                            <button type="submit" id="botaoForm"><strong>Confirmar</strong></button>
                         </div>
     
                     </div>
@@ -104,5 +104,10 @@
     </div>
 
     <script src="../javascript/apiCep.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../javascript/model/model.js"></script>
+    <script src="../javascript/views/views.js"></script>
+    <script src="../javascript/controllers/controller.js"></script>
 </body>
 </html>
