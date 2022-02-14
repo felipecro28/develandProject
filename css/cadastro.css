@@ -41,8 +41,8 @@ fieldset {
     border-bottom: solid 2.5px;
 }
 
-.inputBoxEndereco{
-    padding-top: 10px;
+.inputBox {
+    height: 35px;
 }
 
 legend{
@@ -56,7 +56,7 @@ legend{
     padding: 20px;
     background: white;
     width: 360px;
-    height: 750px;
+    height: 740px;
     border-radius: 10px;
     /* margin: 0 auto; */
 }
@@ -71,13 +71,14 @@ input{
 
 #cep {
     width: 65px;
+    margin-top: 10px;
 }
 
 /* -------------FORM DE RECUPERAR SENHA------------- */
 
 .boxRecuperaSenha{
 width: 360px;
-height: 540px;
+height: 560px;
 background: rgb(253, 253, 253);
 border-radius: 10px;
 padding: 40px 17px;
@@ -102,6 +103,10 @@ padding: 40px 17px;
 
  #avatarCoruja{
     height: 115px;
+ }
+
+ input{
+     padding: 15px 0;
  }
 
 /*------------------ BOTAO DE ENVIAR FORMULARIO ------------------ */
