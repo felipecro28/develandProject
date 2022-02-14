@@ -127,18 +127,7 @@ button {
 }
 /* -------------- FORMULARIO EM COLUNA PARA RESPONSIVIDADE-----------------*/
 
-@media (max-width: 728px){
-    .containerForm{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    #boxCadastro {
-        margin-bottom: 15px;
-    }
-    
-}
+
 
 
 
