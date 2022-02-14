@@ -1,5 +1,6 @@
 html {
     height: 1200px;
+    background: rgb(21, 19, 107);
 }
 
 /* 
@@ -12,10 +13,12 @@ html {
 
 /* ----------------container onde esta formulario----------------------- */
 .container {
-    background: rgb(179, 179, 179);
+    background: rgb(206, 206, 206);
     max-width: 900px;
-    max-height: 1000px;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -31,7 +34,7 @@ fieldset {
     background: rgba(255, 255, 255, 0);
 }
 
-.inputUser{
+.inputUser, input{
     width: 100%;
     background: none;
     border: none;
@@ -49,13 +52,13 @@ legend{
     text-align: center;
 }
 
-#box{
+#boxCadastro{
     padding: 20px;
     background: white;
     width: 360px;
-    height: 780px;
+    height: 750px;
     border-radius: 10px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 input{
@@ -69,7 +72,38 @@ input{
 #cep {
     width: 65px;
 }
- 
+
+/* -------------FORM DE RECUPERAR SENHA------------- */
+
+.boxRecuperaSenha{
+width: 360px;
+height: 540px;
+background: rgb(253, 253, 253);
+border-radius: 10px;
+padding: 40px 17px;
+}
+
+.divRecuperaSenha{
+    border: solid  5px #e6178b;
+    padding: 30px;
+}
+ h2, label, p{
+     color: black;
+ }
+ h2{
+     margin-bottom: 50px;
+ }
+ .textRecuperaSenha{
+     margin-top: 30px;
+ }
+ .enviarRecuperacao{
+     margin-top: 35px;
+ }
+
+ #avatarCoruja{
+    height: 115px;
+ }
+
 /*------------------ BOTAO DE ENVIAR FORMULARIO ------------------ */
 
 button {
