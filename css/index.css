@@ -586,6 +586,31 @@ footer .container h2:before{
     position: relative;
     width: 25%;
 }
+
+.contact .info li span {
+    font-size: 0.8rem;
+}
+
+.contact .info li span img{
+    color: white;
+}
+
+/* Corrigindo estilizacao do footer */
+
+footer h2 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.sci {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .links ul li{
     list-style: none;
 }
@@ -643,5 +668,12 @@ footer .container h2:before{
     .textoFinal{
         padding: 8px 40px;
         text-align: center;
+    }
+
+    .sci {
+        display: flex;
+        justify-content: center;
+        width: 100%;   
+        flex-direction: row;
     }
 }

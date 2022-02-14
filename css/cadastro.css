@@ -12,12 +12,10 @@ html {
 
 
 /* ----------------container onde esta formulario----------------------- */
-.container {
+.containerForm {
 
     background: rgb(179, 179, 179);
-    max-width: 100%;
-    max-height: 1000px;
-
+    width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -43,8 +41,8 @@ fieldset {
     border-bottom: solid 2.5px;
 }
 
-.inputBoxEndereco{
-    padding-top: 10px;
+.inputBox {
+    height: 35px;
 }
 
 legend{
@@ -54,11 +52,16 @@ legend{
     text-align: center;
 }
 
+#logo{
+ margin-left: 50px;
+ font-size: 26px;
+}
+
 #boxCadastro{
     padding: 20px;
     background: white;
     width: 360px;
-    height: 750px;
+    height: 740px;
     border-radius: 10px;
     /* margin: 0 auto; */
 }
@@ -73,16 +76,17 @@ input{
 
 #cep {
     width: 65px;
+    margin-top: 10px;
 }
 
 /* -------------FORM DE RECUPERAR SENHA------------- */
 
 .boxRecuperaSenha{
 width: 360px;
-height: 540px;
+height: 560px;
 background: rgb(253, 253, 253);
 border-radius: 10px;
-padding: 40px 17px;
+padding: 37px 17px;
 }
 
 .divRecuperaSenha{
@@ -106,6 +110,10 @@ padding: 40px 17px;
     height: 115px;
  }
 
+ input{
+     padding: 15px 0;
+ }
+
 /*------------------ BOTAO DE ENVIAR FORMULARIO ------------------ */
 
 button {
@@ -120,7 +128,24 @@ button {
 ::placeholder{
         color: black;
 }
-/* ----------------- FIM FORMULARIO ---------------------*/
+/* -------------- FORMULARIO EM COLUNA PARA RESPONSIVIDADE-----------------*/
 
+@media (max-width: 728px){
+    .containerForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #boxCadastro {
+        margin-bottom: 15px;
+    }
+    
+}
 
+#cadastroSucesso{
+    font-size: 10px;
+    margin: 20px 0 0 40px;
+    font-weight: bolder;
+}
 
