@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    z-index: 2;
+    z-index: 6;
     position: fixed;
     width: 100%;
 }
@@ -160,6 +160,37 @@ main{
 
 
 
+.descricao{
+    font-size: 18px;
+    color: #e6178b;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    z-index: 5;
+    width: 70%;
+    text-align: left;
+    padding: 3em;
+    
+    
+}
+
+.descricao P{
+    width: fit-content;
+    background-color: white;
+}
+
+
+.descricao a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #e6178b;;
+}
+
+
+
+
+
 
 
 
@@ -258,7 +289,7 @@ hr {
 }
 
 .conhecaNossosPlanos{
-    margin: 0 0% 30% -15%;
+    margin: 0 0% 5% -30%;
     width: 100vh;
 }
 
@@ -335,7 +366,7 @@ hr {
         margin: 0;
         padding: 0;
         width: 100%;
-        height: max-content;
+        height:fit-content;
     }
 
     .navMenuDiv ul{
@@ -346,6 +377,8 @@ hr {
         text-transform: uppercase;
         font-weight: bold;
     }
+
+
 
     .navMenuDiv li{
         width: 100%;
@@ -382,7 +415,10 @@ hr {
     .lineMenuDiv{
         display: flex;
         flex-direction: column;
+        margin-top: 1;
     }
+
+.lineMenuDiv {}
     
     .video{
         height: 100vm;
@@ -396,6 +432,27 @@ hr {
      z-index: 1;
      color: white;
      margin: 0 0 20% 0
+ }
+
+
+ .descricao{
+     height: 50%;
+     width: 70%;
+     top: 20%;
+     font-size: 10px;
+     padding: 5px 5px 5px 10px;
+     color: white;
+ }
+
+ .descricao p{
+     font-weight: unset;
+     line-height: 12px;
+     background-color: unset;
+
+ }
+
+ .descricao a{
+    color: white;
  }
 
     .logoTorneSe{

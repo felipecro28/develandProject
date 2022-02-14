@@ -34,9 +34,10 @@
             <form>
                 <div class="formLogin">
                     <label>Login: </label>
-                    <input type="email">
+                    <input type="email" id="login">
                     <label> Senha: </label>
-                    <input type="password">
+                    <input type="password" id="senha">
+                    <button type="submit" id="botaoLogin"> Fazer Login</button>
                 </div>
                     <p id="forgotPassword">Esqueceu sua senha?</p>
                 </form>
@@ -48,8 +49,16 @@
             <video autoplay muted loop id="videoDiv">
                 <source id="myVideo" src="./img/bgIndexParteDeCimaDevland.mp4" type="video/mp4">
               </video>
+              <div class="descricao">
+                <p>Aprenda programação jogando!</p>
+                <p>Nosso game interativo possui mais de 10 linguagens <br> de programação e frameworks para você se tornar um programador.</p>
+                <p>Tenha acesso a desafios diários, resgate recompensas <br> e conquiste o mercado de trabalho!</p>
+                <p>Aprender programação nunca foi tão fácil.</p>
+                <p>Acompanhe nosso lançamento</p>
+                <p><a href="./html/cadastro.html">INSCREVA-SE JÁ!</a></p>
+              </div>
         </div>
-        <div class="videoParagraph">
+        <div class="videoParagraph" id="videoParagraph">
             <p> Prepare-se para o futuro</p>
             <p id="startNow">Comece agora</p>
         </div>
@@ -114,7 +123,7 @@
 
   </section>
     <section class="cardPromocional">
-        <div class="container-fluid" style="background-image: url(../img/background\ card.jpg); background-size: cover;">
+        <div class="container-fluid" style="background-color: #EAEAEA;">
             <div class="container p-5">
               <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4">
@@ -192,6 +201,7 @@
    
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./javascript/index.js"></script>
+
     <footer>
       <div class="container">
         <div class="sec aboutus">
@@ -236,6 +246,13 @@
     <div class="textoFinal">
       <p>Todos os direitos reservados © 2022 - DEVLAND</p>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./javascript/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./javascript/model/model.js"></script>
+    <script src="./javascript/views/views.js"></script>
+    <script src="./javascript/controllers/controller.js"></script>
 </body>
 
 </html>
