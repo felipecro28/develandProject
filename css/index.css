@@ -552,6 +552,7 @@ footer .container h2:before{
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+    font-size: 0.8rem;
 }
 .links ul li a:hover{
     color:black;
@@ -565,11 +566,11 @@ footer .container h2:before{
     display: flex;
     margin-bottom: 16px;
 }
-.contact .info li spain:nth-child(1){
+/* .contact .info li spain:nth-child(1){
     color: white;
     font-size: 20px;
     margin-right: 10px;
-}
+} */
 .contact .info li a{
     color:white;
 }
@@ -584,6 +585,32 @@ footer .container h2:before{
     text-align: center;
     color: white;
 }
+
+.contact .info li span {
+    font-size: 0.8rem;
+}
+
+.contact .info li span img{
+    color: white;
+}
+
+/* Corrigindo estilizacao do footer */
+
+footer h2 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.sci {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
 @media (max-width:900px){
     footer{
         padding: 40px;
@@ -596,10 +623,16 @@ footer .container h2:before{
         margin-bottom: 40px;
     }
     footer .container .sec.aboutus,.links,.contact{
-        widht: 100%;
+        width: 100%;
     }
     .textoFinal{
         padding: 8px 40px;
         text-align: center;
+    }
+    .sci {
+        display: flex;
+        justify-content: center;
+        width: 100%;   
+        flex-direction: row;
     }
 }
