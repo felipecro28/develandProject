@@ -10,16 +10,47 @@
 </head>
 <body>
 
+    <header>
+        <nav id="navBar">
+            <div id="logoDev">
+                <a class="navbar-brand" id="logo">&lt/DEVLAND&gt</a>
+            </div>
+            <div class="lineMenuDiv">
+                <div class="lineMenu"></div>
+                <div class="lineMenu"></div>
+                <div class="lineMenu"></div>
+            </div>
+            <div class="navMenuDiv">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="index.html#startNow">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="./html/loginMobile.html" class="listaLogin">Login</a></li>
+                </ul>
+            </div>
+            <form>
+                <div class="formLogin">
+                    <p id="areaDoCliente">Área do cliente</p>
+                    <label></label>
+                    <input type="email" id="login" placeholder="Login">
+                    <label></label>
+                    <input type="password" id="senha" placeholder="Senha">
+                    <button type="submit" id="botaoLogin">Entrar</button>
+                    <p id="forgotPassword">Esqueceu sua senha?</p>
+                  </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
     <!-- ----------------- PARTE DE DADOS PESSOAIS -------------- -->
     <div class="containerForm">
 
         <div id="boxCadastro">
             
-            <form action="" id="formCadastro">
+            <form action="">
                 <fieldset>
-                    <legend><strong>Cadastro</strong></legend>
-
-                    <p id="logo">&lt/DEVLAND&gt</p>
+                    <img src="../img/avatarAddConta.png" class="avatarConta">
     
                     <div class="inputBox">
                         <label for="nome"></label>
@@ -93,50 +124,62 @@
                         <br>
         <!-- ---------- PARTE DE ENVIAR -- PODERA SER ALTERADO PARA BUTTON--------- -->
                         <div id="divBotao">
-
                             <button type="submit" id="botaoForm"><strong>Confirmar</strong></button>
-
                         </div>
     
-                    </div>
-    
-                </fieldset>
-            </form>
-            <div class="boxRecuperaSenha">
-                <div class="divRecuperaSenha">
-                    <img src="../img/caricatura2.png" class="caricatura" id="avatarCoruja">
-                    <h2>Esqueceu a senha ?</h2>
-                    <form>
-                        <div>
-                            <label></label>
-                            <input type="email" class="inputUser" id="emailRecuperaSenha" placeholder="Digite seu e-mail" >
-                        </div>
-                        <br>
+                    </fieldset>
 
-                        <div>
-                            <label for="rg"></label>
-                            <input type="number" class="inputUser" id="rgRecuperaSenha" placeholder="Digite seu documento">
-                        </div>
-
-                        <p class="textRecuperaSenha">
-                            Enviaremos um e-mail com link para a recuperação de senha.
-                        </p>
-
-                        <div>
-                            <button type="submit" class="enviarRecuperacao">
-                                <strong>Enviar</strong>
-                            </button>
-                        </div>
-
-                    </form>
-
-                    
-
+                 </form>
                 </div>
-            </div>
-        </div>
-        
-    </div>
+             </div>
+
+             <footer>
+                <div class="container">
+                  <div class="sec aboutus">
+                    <h2> Sobre nós:</h2>
+                    <p> Nós somos a DEVLAND, nossa empresa foi criada a partir da dificuldade de boas escolas na área de programação. Venha conhecer nossos métodos e ver como é possível entrar na área que mais emprega no Mundo. Você pode ser a próxima pessoa a receber em Dólar. </p>
+                  </div>
+                  <div class="sec links">
+                    <h2>Links Fornecidos</h2>
+                    <ul>
+                      <li><a href="#">Sobre</a></li>
+                      <li><a href="#">SAQ</a></li>
+                      <li><a href="#">Política de Privacidade</a></li>
+                      <li><a href="#">Termos e Condições</a></li>
+                      <li><a href="#">Contato</a></li>
+                    </ul> 
+                  </div>
+                  <div class="sec contact">
+                    <h2>Informações de Contato</h2>
+                    <ul class="info">
+                      <li>
+                        <span><img src="..//img/map.svg"></span>
+                        <span>R. Hans Staden, 20 - Botafogo <br> Rio de Janeiro - RJ <br> CEP 22281-060</span>
+                      </li>
+                      <li>
+                        <span><img src="..//img/telephone.svg"></span>
+                        <span>+55 21 XXXX-XXXX</span>
+                      </li>
+                      <li>
+                        <span><img src="..//img/envelope.svg"></span>
+                        <p><a href="malito:contato@devland.org.br">contato@devland.org.br</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sciContainer">
+                    <ul class="sci">
+                      <li><img src="..//img/facebook.svg"></li>
+                      <li><img src="..//img/twitter.svg"></li>
+                      <li><img src="..//img/instagram.svg"></li>
+                      <li><img src="..//img/youtube.svg"></li>
+                    </ul>
+                  </div>
+                </div>  
+              </footer>
+              <div class="textoFinal">
+                <p>Todos os direitos reservados © 2022 - DEVLAND</p>
+              </div>
+            
     
 <script src="../javascript/apiCep.js"></script>
 
