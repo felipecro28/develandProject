@@ -38,7 +38,7 @@ class Usuario{
 const usuarioFinal = new Usuario()
 
 
-$('#botaoForm').click((evento) =>{
+$('#formCadastro').submit((evento) =>{
     evento.preventDefault()
     usuarioFinal.guardarUsuario()
 })

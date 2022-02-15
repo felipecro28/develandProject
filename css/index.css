@@ -40,7 +40,7 @@ header{
 
 
 .navMenuDiv ul li a{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 .navMenuDiv ul{
@@ -392,7 +392,7 @@ hr {
     background:#212529;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     #navBar{
         width: 100%;
         height: fit-content;
@@ -434,9 +434,8 @@ hr {
  
     }
 
-    .navMenuDiv a{
-        FONT-WEIGHT: 200;
-        font-size: 14px;
+    .navMenuDiv ul li a{
+        font-size: 10px;
         margin: auto;
     }
 
@@ -460,7 +459,6 @@ hr {
         margin-top: 1;
     }
 
-.lineMenuDiv {}
     
     .video{
         height: 100vm;
@@ -477,7 +475,7 @@ hr {
  }
 
 
- .descricao{
+    .descricao{
      height: 50%;
      width: 70%;
      top: 20%;
@@ -530,12 +528,15 @@ hr {
 
 }
     
+
+
+
 }
 footer{
     position: relative;
     width: 100%;
-    height: auto;
-    padding: 50px 100px;
+    height: fit-content;
+    padding: auto;
     background: #e6178b;
     display: flex;
     justify-content: space-between;
@@ -546,7 +547,11 @@ footer .container{
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 10px 0 0 90px;
+    width: fit-content;
 }
+
+
 footer .container .sec{
     margin-right:  30px;
 }
@@ -554,10 +559,8 @@ footer .container .sec.aboutus{
     width: 40%;
 }
 footer .container .sec.aboutus h2{
-    position: relative;
     color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
+    margin: 30px 50px 15px 0px
 }
 footer .container h2:before{
     content: '';
@@ -566,17 +569,16 @@ footer .container h2:before{
     left: 0;
     width: 50;
 }
+
 .sci li{
     list-style: none;
     display: inline-block;
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin: 30px 0 0 30px;
     text-decoration: none;
-    border-radius: 4px;
+    
 }
 .sci li:hover{
     background: white;
@@ -593,32 +595,39 @@ footer .container h2:before{
 
 .contact .info li span img{
     color: white;
+    padding: 0 20px 0 0;
 }
 
 /* Corrigindo estilizacao do footer */
 
 footer h2 {
     font-size: 1rem;
+    margin: 25px 0 10px 28px;
+    height: fit-content;
+    width: fit-content;
 }
 
 footer p {
-    font-size: 0.8rem;
+    font-size: 0.8rem
 }
 
 .sci {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 5px 0 20px 0;
+    margin-left: 18em;
 }
 
 .links ul li{
     list-style: none;
+    font-size: 0.8rem;
 }
 .links ul li a{
     color: white;
     text-decoration: none;
-    margin-bottom: 10px;
     display: inline-block;
+    padding: 2px;
 }
 .links ul li a:hover{
     color:black;
@@ -651,17 +660,16 @@ footer p {
     text-align: center;
     color: white;
 }
-@media (max-width:900px){
-    footer{
-        padding: 40px;
-    }
+
+
+@media (max-width:1000px){
+ 
     footer .container{
         flex-direction: column;
+        width: 100vh;
+
     }
-    footer .container .sec{
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
+
     footer .container .sec.aboutus,.links,.contact{
         widht: 100%;
     }

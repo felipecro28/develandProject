@@ -1,4 +1,4 @@
-hamburguerMenu = $('.lineMenuDiv')
+const hamburguerMenu = $('.lineMenuDiv')
 
 hamburguerMenu.on('click', function(){
     const navMenu = $('.navMenuDiv ul')
