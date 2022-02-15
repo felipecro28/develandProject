@@ -1,6 +1,5 @@
 html {
-    height: 1200px;
-    background: rgb(21, 19, 107);
+    background: #21273a;
 }
 
 /* 
@@ -11,27 +10,35 @@ html {
 */
 
 
+
+
 /* ----------------container onde esta formulario----------------------- */
 .containerForm {
-
-    background: rgb(179, 179, 179);
-    width: 900px;
+    
+    background: rgb(241, 241, 241);
+    background-image: linear-gradient(to bottom, #f82b9c50, #de2fb554, #b93dcc54, #844cde50, #1257eb55);
+    max-width: 70%;
+    min-width: 70%;
     margin: 0 auto;
+    height: 1000px;
     display: flex;
     justify-content: space-around;
 }
 
 
 /* ----------------------INICIO FORMULARIO --------------- */
-.caricatura{
-    width: 50%;
-    margin-left: 70px;
+.avatarConta{
+    width: 40%;
+    margin-left: 30%
+
 }
+
 fieldset {
-    
     padding: 30px;
     border: solid 5px #e6178b;
     background: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    height: 800px;
 }
 
 .inputUser, input{
@@ -43,27 +50,17 @@ fieldset {
 
 .inputBox {
     height: 35px;
-}
-
-legend{
-    background:#e6178b;
-    border-radius: 5px;
-    padding: 7px 30px;
-    text-align: center;
-}
-
-#logo{
- margin-left: 50px;
- font-size: 26px;
+    
 }
 
 #boxCadastro{
-    padding: 20px;
-    background: white;
-    width: 360px;
-    height: 740px;
-    border-radius: 10px;
-    /* margin: 0 auto; */
+    
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 510px;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 150px;
 }
 
 input{
@@ -81,23 +78,21 @@ input{
 
 /* -------------FORM DE RECUPERAR SENHA------------- */
 
-.boxRecuperaSenha{
-width: 360px;
-height: 560px;
-background: rgb(253, 253, 253);
-border-radius: 10px;
-padding: 37px 17px;
-}
-
 .divRecuperaSenha{
     border: solid  5px #e6178b;
     padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    margin: 150px auto;
+    height: 600px;
 }
  h2, label, p{
      color: black;
  }
  h2{
      margin-bottom: 50px;
+     margin-left: 15%;
  }
  .textRecuperaSenha{
      margin-top: 30px;
@@ -119,7 +114,7 @@ padding: 37px 17px;
 button {
     width: 110px;
     height: 31px;
-    margin-left: 30%;
+    margin-top: 10%;
     background-color: #e6178b;
     border: none;
     border-radius: 5px;
@@ -127,25 +122,11 @@ button {
 
 ::placeholder{
         color: black;
+        font-size: 17px;
 }
+
 /* -------------- FORMULARIO EM COLUNA PARA RESPONSIVIDADE-----------------*/
 
-@media (max-width: 728px){
-    .containerForm{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    #boxCadastro {
-        margin-bottom: 15px;
-    }
-    
-}
 
-#cadastroSucesso{
-    font-size: 10px;
-    margin: 20px 0 0 40px;
-    font-weight: bolder;
-}
+
 
