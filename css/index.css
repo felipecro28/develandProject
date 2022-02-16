@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: =;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
@@ -39,9 +39,6 @@ header{
 }
 
 
-.navMenuDiv ul li a{
-    /* font-size: 1.2rem; */
-}
 
 .navMenuDiv ul{
     margin: 0;
@@ -67,7 +64,7 @@ header{
 }
 
 .navMenuDiv li a:hover{
-    color:#e6178b
+    color:#e6178b;
 }
 
 .navMenuDiv a{
@@ -136,6 +133,7 @@ header{
 .formLogin button:hover{
     background: #E6178B;
     color:gold;
+    box-shadow: 0 0 1em gold;
 }
 
 .formLogin input{
@@ -149,9 +147,14 @@ header{
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
 }
 
-
+#forgotPassword:hover {
+    color: gold;
+}
 
 
 
@@ -189,6 +192,12 @@ main{
     z-index: 1;
     color: white;
     text-align: center;
+    margin-bottom: 2%;
+}
+
+.videoParagraph button{
+    border: none;
+    background: none;
 }
 
 
@@ -197,9 +206,15 @@ main{
     padding: 0;
     margin-bottom: 1em;
     background-color: #e6178b;
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
 }
 
-
+#startNow:hover{
+    color: gold;
+    box-shadow: 0 0 1em gold;
+}
 
 
 .descricao{
@@ -661,27 +676,13 @@ footer p {
     color: white;
 }
 
-
-@media (max-width:1000px){
- 
-    footer .container{
-        flex-direction: column;
-        width: 100vh;
-
+@media (max-width: 1000px) {
+    footer{
+        display: none;
     }
-
-    footer .container .sec.aboutus,.links,.contact{
-        widht: 100%;
-    }
+    
     .textoFinal{
-        padding: 8px 40px;
-        text-align: center;
-    }
-
-    .sci {
-        display: flex;
-        justify-content: center;
-        width: 100%;   
-        flex-direction: row;
+        margin: 0;
+        padding: 0;
     }
 }

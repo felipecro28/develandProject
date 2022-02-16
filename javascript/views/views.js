@@ -1,4 +1,12 @@
 class ValidaLogin{
+    
+    mostrar(){
+        $('#divBotao').append(`<p id="cadastroSucesso"> Usuário cadastrado com sucesso! </p>`)
+        setTimeout(()=>{
+            window.location.href = '../index.html'
+        }, 1000)
+    }
+
     validar(obj){
         const login = $('#login').val()
         const senha = $('#senha').val()

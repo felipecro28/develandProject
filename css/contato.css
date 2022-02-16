@@ -1,0 +1,55 @@
+header{
+    position: relative;
+}
+
+body{
+    background-color: rgba(58, 40, 136, 0.645);
+}
+
+main{
+    height: 80%;
+}
+
+.contatoGeral{
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contato{
+    width: 35%;
+    height: 200px;
+    margin: 4% auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+
+}
+
+
+.contato:hover{
+    background-color: rgba(90, 71, 170, 0.645);
+}
+
+
+@media (max-width: 1000px){
+
+    .contato{
+        width: 70%;
+        font-size: 12px;
+    }
+
+
+
+    img{
+        width: 60px;
+        height: 40px;
+    }
+
+}
+
