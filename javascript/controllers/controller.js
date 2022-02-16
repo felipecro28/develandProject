@@ -21,11 +21,9 @@ class Usuario{
         
         localStorage.setItem('listaUser', JSON.stringify(listaUser))
 
+        const log = new ValidaLogin()
+        log.mostrar()
 
-        $('#divBotao').append(`<p id="cadastroSucesso"> Usuário cadastrado com sucesso! </p>`)
-        setTimeout(()=>{
-            window.location.href = '../index.html'
-        }, 2000)
         
     }
 

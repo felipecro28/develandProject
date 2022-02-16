@@ -1,35 +1,36 @@
-html {
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
     background: #21273a;
 }
 
-/* 
--linkar barra de nvageção
--colocar hover 
--linkar footer 
--validar formulario 
-*/
+header{
+    height: max-content;
+    position: relative;
+   
+}
 
-
-
-
-/* ----------------container onde esta formulario----------------------- */
 .containerForm {
     
     background: rgb(241, 241, 241);
     background-image: linear-gradient(to bottom, #f82b9c50, #de2fb554, #b93dcc54, #844cde50, #1257eb55);
-    max-width: 70%;
-    min-width: 70%;
+    width: 70%;
     margin: 0 auto;
-    height: 1000px;
+    height: 80%;
     display: flex;
     justify-content: space-around;
 }
 
 
-/* ----------------------INICIO FORMULARIO --------------- */
+.boxCadastro{
+    height: fit-content;
+}
+
 .avatarConta{
     width: 40%;
-    margin-left: 30%
+    margin-left: 30%;
 
 }
 
@@ -38,78 +39,40 @@ fieldset {
     border: solid 5px #e6178b;
     background: rgba(255, 255, 255, 0);
     border-radius: 15px;
-    height: 800px;
+    height: fit-content;
 }
+
 
 .inputUser, input{
     width: 100%;
     background: none;
     border: none;
     border-bottom: solid 2.5px;
+    padding: 1px;
 }
 
 .inputBox {
-    height: 35px;
+    height: 5%;
     
 }
+
 
 #boxCadastro{
     
     background-color: rgba(255, 255, 255, 0.842);
-    width: 510px;
-    height: 800px;
-    margin: 0 auto;
+    margin: 5% auto;
     border-radius: 15px;
-    margin-top: 150px;
+    width: 40%;
+    height: 80%;
+
 }
 
-input{
-    height: 20px;
+
+
+footer{
+    height: 20%;
 }
 
-#numero{
-    width: 65px;
-}
-
-#cep {
-    width: 65px;
-    margin-top: 10px;
-}
-
-/* -------------FORM DE RECUPERAR SENHA------------- */
-
-.divRecuperaSenha{
-    border: solid  5px #e6178b;
-    padding: 30px;
-    background-color: white;
-    border-radius: 15px;
-    width: 80%;
-    margin: 150px auto;
-    height: 600px;
-}
- h2, label, p{
-     color: black;
- }
- h2{
-     margin-bottom: 50px;
-     margin-left: 15%;
- }
- .textRecuperaSenha{
-     margin-top: 30px;
- }
- .enviarRecuperacao{
-     margin-top: 35px;
- }
-
- #avatarCoruja{
-    height: 115px;
- }
-
- input{
-     padding: 15px 0;
- }
-
-/*------------------ BOTAO DE ENVIAR FORMULARIO ------------------ */
 
 button {
     width: 110px;
@@ -125,8 +88,86 @@ button {
         font-size: 17px;
 }
 
-/* -------------- FORMULARIO EM COLUNA PARA RESPONSIVIDADE-----------------*/
+footer .container{
+    margin: 0 5%;
+}
+
+footer h2{
+margin: 25px 0 10px 0px;
+
+}
+
+.sci{
+    margin: 0;
+    margin-left: 23em;
+}
+
+#cadastroSucesso{
+    color: blue;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+@media (max-width:1000px){
+
+ 
+
+    .lineMenuDiv{
+        top: 0;
+        padding-top: 2%;
+    }
+
+    .containerForm{
+    width: 100%;
+    }
+
+    fieldset {
+    padding: 5px;
+    border: solid 2px #e6178b;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    height: fit-content;
+    }
+
+    #boxCadastro{
+    width: 70%;
+    }
+    
+    button {
+        width: 80px;
+        height: 20px;
+        background-color: #e6178b;
+        border: none;
+        border-radius: 5px;
+        margin: 3%;
+    }
+
+
+
+    #cadastroSucesso{
+        color: blue;
+        margin-top: 10px;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+
+    footer{
+        display: none;
+    }
+
+    .textoFinal{
+        width: 100%;
+    }
+
+    .lineMenuDiv{
+        margin: 1.5%;
+        padding: 0;
+    }
 
 
 
 
+
+}

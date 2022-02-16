@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevLand - Cadastro</title>
     <link href="../css/index.css" rel="stylesheet">
     <link href="../css/cadastro.css" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <nav id="navBar">
             <div id="logoDev">
@@ -22,23 +21,12 @@
             </div>
             <div class="navMenuDiv">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="index.html#startNow">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html#startNow">Sobre</a></li>
+                    <li><a href="./cadastro.html#footerContato">Contato</a></li>
                     <li><a href="./html/loginMobile.html" class="listaLogin">Login</a></li>
                 </ul>
             </div>
-            <form>
-                <div class="formLogin">
-                    <p id="areaDoCliente">Área do cliente</p>
-                    <label></label>
-                    <input type="email" id="login" placeholder="Login">
-                    <label></label>
-                    <input type="password" id="senha" placeholder="Senha">
-                    <button type="submit" id="botaoLogin">Entrar</button>
-                    <p id="forgotPassword">Esqueceu sua senha?</p>
-                  </div>
-                </form>
             </div>
         </nav>
     </header>
@@ -48,7 +36,7 @@
 
         <div id="boxCadastro">
             
-            <form action="">
+            <form action="" id="formCadastro">
                 <fieldset>
                     <img src="../img/avatarAddConta.png" class="avatarConta">
     
@@ -133,58 +121,16 @@
                 </div>
              </div>
 
-             <footer>
-                <div class="container">
-                  <div class="sec aboutus">
-                    <h2> Sobre nós:</h2>
-                    <p> Nós somos a DEVLAND, nossa empresa foi criada a partir da dificuldade de boas escolas na área de programação. Venha conhecer nossos métodos e ver como é possível entrar na área que mais emprega no Mundo. Você pode ser a próxima pessoa a receber em Dólar. </p>
-                  </div>
-                  <div class="sec links">
-                    <h2>Links Fornecidos</h2>
-                    <ul>
-                      <li><a href="#">Sobre</a></li>
-                      <li><a href="#">SAQ</a></li>
-                      <li><a href="#">Política de Privacidade</a></li>
-                      <li><a href="#">Termos e Condições</a></li>
-                      <li><a href="#">Contato</a></li>
-                    </ul> 
-                  </div>
-                  <div class="sec contact">
-                    <h2>Informações de Contato</h2>
-                    <ul class="info">
-                      <li>
-                        <span><img src="..//img/map.svg"></span>
-                        <span>R. Hans Staden, 20 - Botafogo <br> Rio de Janeiro - RJ <br> CEP 22281-060</span>
-                      </li>
-                      <li>
-                        <span><img src="..//img/telephone.svg"></span>
-                        <span>+55 21 XXXX-XXXX</span>
-                      </li>
-                      <li>
-                        <span><img src="..//img/envelope.svg"></span>
-                        <p><a href="malito:contato@devland.org.br">contato@devland.org.br</a></p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="sciContainer">
-                    <ul class="sci">
-                      <li><img src="..//img/facebook.svg"></li>
-                      <li><img src="..//img/twitter.svg"></li>
-                      <li><img src="..//img/instagram.svg"></li>
-                      <li><img src="..//img/youtube.svg"></li>
-                    </ul>
-                  </div>
-                </div>  
-              </footer>
+             <footer id="footerContato">
               <div class="textoFinal">
                 <p>Todos os direitos reservados © 2022 - DEVLAND</p>
               </div>
             
     
 <script src="../javascript/apiCep.js"></script>
-
     <script src="../javascript/apiCep.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../javascript/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="../javascript/model/model.js"></script>
     <script src="../javascript/views/views.js"></script>
