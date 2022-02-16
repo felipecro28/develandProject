@@ -67,7 +67,7 @@ header{
 }
 
 .navMenuDiv li a:hover{
-    color:#e6178b
+    color:#e6178b;
 }
 
 .navMenuDiv a{
@@ -136,6 +136,7 @@ header{
 .formLogin button:hover{
     background: #E6178B;
     color:gold;
+    box-shadow: 0 0 1em gold;
 }
 
 .formLogin input{
@@ -189,6 +190,12 @@ main{
     z-index: 1;
     color: white;
     text-align: center;
+    margin-bottom: 2%;
+}
+
+.videoParagraph button{
+    border: none;
+    background: none;
 }
 
 
@@ -197,9 +204,15 @@ main{
     padding: 0;
     margin-bottom: 1em;
     background-color: #e6178b;
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
 }
 
-
+#startNow:hover{
+    color: gold;
+    box-shadow: 0 0 1em gold;
+}
 
 
 .descricao{
