@@ -150,9 +150,14 @@ header{
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
 }
 
-
+#forgotPassword:hover {
+    color: gold;
+}
 
 
 
