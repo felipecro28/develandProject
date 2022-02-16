@@ -20,8 +20,14 @@ class ValidaLogin{
         listaUser.forEach(item => {
             if(login == item.userCad && senha == item.senhaCad){
                 alert('Login realizado com sucesso!')
+                login = ""
+                senha = ""
+
             } else{
                 alert('Login e/ou senha incorretos!')
+                login = ""
+                senha = ""
+                document.location.reload(true)
             }
             
         });

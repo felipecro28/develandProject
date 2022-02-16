@@ -42,10 +42,7 @@ $('#formCadastro').submit((evento) =>{
 })
 
 
-$('#botaoLogin').click((evento) => {
+$('#formLogin').submit((evento) => {
     evento.preventDefault()
     usuarioFinal.logar()
-}
-
-
-)
+})
