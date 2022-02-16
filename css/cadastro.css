@@ -9,28 +9,9 @@ html {
 -validar formulario 
 */
 
-
-
-
-/* ----------------container onde esta formulario----------------------- */
-.containerForm {
-    
-    background: rgb(241, 241, 241);
-    background-image: linear-gradient(to bottom, #f82b9c50, #de2fb554, #b93dcc54, #844cde50, #1257eb55);
-    max-width: 70%;
-    min-width: 70%;
-    margin: 0 auto;
-    height: 1000px;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/* ----------------------INICIO FORMULARIO --------------- */
-.avatarConta{
-    width: 40%;
-    margin-left: 30%
-
+header{
+    position: absolute;
+    top: 0
 }
 
 fieldset {
@@ -38,10 +19,10 @@ fieldset {
     border: solid 5px #e6178b;
     background: rgba(255, 255, 255, 0);
     border-radius: 15px;
-    height: 800px;
+    height: fit-content
 }
 
-.inputUser, input{
+.inputUser2, input{
     width: 100%;
     background: none;
     border: none;
@@ -106,12 +87,12 @@ input{
  }
 
  input{
-     padding: 15px 0;
+     /* padding: 15px 0; */
  }
 
 /*------------------ BOTAO DE ENVIAR FORMULARIO ------------------ */
 
-button {
+#botaoForm {
     width: 110px;
     height: 31px;
     margin-top: 10%;
@@ -124,9 +105,4 @@ button {
         color: black;
         font-size: 17px;
 }
-
-/* -------------- FORMULARIO EM COLUNA PARA RESPONSIVIDADE-----------------*/
-
-
-
 
